@@ -1,3 +1,4 @@
+/* Ordered list for Achievements */
 ol.achievements>li:before {
   content: counter(ol-counter);
   counter-increment: ol-counter;
@@ -21,6 +22,29 @@ ol.achievements>li:before {
 ol.achievements>li:not(:last-child) {
   margin-bottom: 1rem;
 }
+
+/* Avatar animation */
+@keyframes jump {
+  0% {}
+  15% {
+    margin-top: 5px;
+    transform: scaleX(1.1)
+  }
+  50% {
+    margin-top: -10px;
+  }
+  75% {
+    margin-top: 5px;
+  }
+  100% {}
+}
+
+.avatar:hover {
+  animation-name: jump;
+  animation-duration: 0.3s;
+}
+
+/* Emoji */
 
 .emoji {
   display: inline-block;
