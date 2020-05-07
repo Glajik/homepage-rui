@@ -1,0 +1,13 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Ryu Hoshi resume",
+  "main": "index.js",
+  "repository": "https://github.com/Glajik/homepage.git",
+  "author": "Viacheslav Glazhevskyi <glajik@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "serve": "^11.3.0"
+  }
+}
