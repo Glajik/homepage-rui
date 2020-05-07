@@ -34,3 +34,24 @@ ol.achievements>li:not(:last-child) {
   background-size: contain;
   background-position: center;
 }
+
+/* avatar animation */
+@keyframes jump {
+  0% {}
+  15% {
+    margin-top: 5px;
+    transform: scaleX(1.1)
+  }
+  50% {
+    margin-top: -10px;
+  }
+  75% {
+    margin-top: 5px;
+  }
+  100% {}
+}
+
+.avatar:hover {
+  animation-name: jump;
+  animation-duration: 0.3s;
+}
